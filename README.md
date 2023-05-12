@@ -194,7 +194,7 @@ docker service ps --format "{{json .}}" viz | jq
 ### Understanding reconciliation by draining a manager node
 
 ```
-docker node update --availability ("active"|"pause"|"drain")
+docker node update --availability ("active"|"pause"|"drain") hostname
 ```
 
 pause means don't add any work to me
